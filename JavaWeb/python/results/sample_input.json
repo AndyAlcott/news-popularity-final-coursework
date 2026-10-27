@@ -1,0 +1,15 @@
+{
+  "model": "random_forest",
+  "features": {
+    "n_tokens_title": 8.0,
+    "n_tokens_content": 448.0,
+    "num_hrefs": 1.0,
+    "num_imgs": 1.0,
+    "num_videos": 0.0,
+    "average_token_length": 4.46205357143,
+    "num_keywords": 4.0,
+    "global_subjectivity": 0.421116780045,
+    "global_sentiment_polarity": 0.208815192744,
+    "is_weekend": 0.0
+  }
+}

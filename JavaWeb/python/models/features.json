@@ -1,0 +1,27 @@
+{
+  "features": [
+    "n_tokens_title",
+    "n_tokens_content",
+    "num_hrefs",
+    "num_imgs",
+    "num_videos",
+    "average_token_length",
+    "num_keywords",
+    "global_subjectivity",
+    "global_sentiment_polarity",
+    "is_weekend"
+  ],
+  "labels": [
+    "标题词数",
+    "正文词数",
+    "链接数",
+    "图片数",
+    "视频数",
+    "平均词长",
+    "关键词数",
+    "主观性",
+    "情感极性",
+    "是否周末"
+  ],
+  "threshold": 1400
+}

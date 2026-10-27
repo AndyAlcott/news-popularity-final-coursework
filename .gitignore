@@ -1,0 +1,10 @@
+**/node_modules/
+**/target/
+**/__pycache__/
+*.log
+local.ps1
+截图/
+测试控制台/
+期中Python/
+本机登录信息.txt
+.runtime-temp/

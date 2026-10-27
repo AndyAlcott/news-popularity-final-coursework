@@ -1,0 +1,37 @@
+{
+  "source": "https://archive.ics.uci.edu/dataset/332/online+news+popularity",
+  "sha256": "b66d9088632308cc27fa35af847650d174a5a50503987c4e511de94a99d1c218",
+  "original_rows": 39644,
+  "rows": 39644,
+  "duplicate_urls": 0,
+  "missing": {
+    "n_tokens_title": 0,
+    "n_tokens_content": 0,
+    "num_hrefs": 0,
+    "num_imgs": 0,
+    "num_videos": 0,
+    "average_token_length": 0,
+    "num_keywords": 0,
+    "global_subjectivity": 0,
+    "global_sentiment_polarity": 0,
+    "is_weekend": 0
+  },
+  "iqr_outliers": {
+    "n_tokens_title": 156,
+    "n_tokens_content": 1947,
+    "num_hrefs": 2169,
+    "num_imgs": 7703,
+    "num_videos": 2946,
+    "average_token_length": 1685,
+    "num_keywords": 51,
+    "global_subjectivity": 1925,
+    "global_sentiment_polarity": 824
+  },
+  "train_rows": 31715,
+  "test_rows": 7929,
+  "class_counts": {
+    "0": 18490,
+    "1": 21154
+  },
+  "threshold": 1400
+}

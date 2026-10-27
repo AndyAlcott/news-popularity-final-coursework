@@ -1,0 +1,5 @@
+﻿model,preprocessing,cv_f1,params
+decision_tree,median,0.6218914916603615,"{'model__max_depth': 8, 'model__min_samples_leaf': 10}"
+decision_tree,median+standard,0.6218914916603615,"{'model__max_depth': 8, 'model__min_samples_leaf': 10}"
+random_forest,median,0.6462827190662651,"{'model__max_depth': 16, 'model__min_samples_leaf': 15}"
+random_forest,median+standard,0.6467515896958861,"{'model__max_depth': 16, 'model__min_samples_leaf': 15}"
