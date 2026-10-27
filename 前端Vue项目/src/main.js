@@ -28,7 +28,8 @@ new Vue({
     async predict(){
       if(this.schema.features.some(k=>this.features[k]===null||this.features[k]===undefined||this.features[k]===''||!Number.isFinite(Number(this.features[k])))){this.$message.warning('请完整填写有效数值');return;}
       this.busy=true;
-      try {this.result=await this.request('/api/predict',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({model:this.model,features:this.features})}); this.$message.success('预测成功，记录已保存');} catch(e){this.$message.error(e.message)} finally {this.busy=false;}
+      const features=Object.fromEntries(this.schema.features.map(k=>[k,Number(this.features[k])]));
+      try {this.result=await this.request('/api/predict',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({model:this.model,features})}); this.$message.success('预测成功，记录已保存');} catch(e){this.$message.error(e.message)} finally {this.busy=false;}
     },
     async remove(id){try {await this.$confirm('确定删除这条预测记录？','提示',{type:'warning'}); await this.request('/api/records/'+id,{method:'DELETE'}); await this.go('records'); this.$message.success('已删除');}catch(e){if(e!=='cancel'&&e!=='close')this.$message.error(e.message||'删除失败')}},
     percent(n){return (Number(n)*100).toFixed(2)+'%';}
